@@ -1,1 +1,103 @@
-/*# sourceMappingURL=style.css.map */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+header .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .wrapper .logo {
+  width: 20%;
+}
+header .wrapper .logo img {
+  width: 100%;
+}
+header .wrapper nav {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .wrapper nav #menu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+header .wrapper nav #menu.active {
+  right: 0;
+}
+header .wrapper nav #menu .open-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .wrapper nav #menu .open-menu ul {
+  height: 100vh;
+  width: 100%;
+}
+header .wrapper nav #menu .open-menu ul li a {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #353535;
+}
+header .wrapper nav #menu .open-menu ul hr {
+  margin-bottom: 20px;
+}
+header .wrapper nav #menu .open-menu .open-menu-logo {
+  width: 30%;
+}
+header .wrapper nav #menu .open-menu .open-menu-logo img {
+  width: 100%;
+}
+header .wrapper nav #menu .open-menu #menu-close {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+}
+
+@media (min-width: 768px) {
+  header .wrapper nav ul {
+    background-color: pink;
+  }
+}
+swiper-container {
+  width: 100%;
+  height: 720px;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
