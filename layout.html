@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Header</title>
 </head>
 
@@ -38,11 +42,11 @@
                         <ul>
                             <li><a href="/">Home</a></li>
                             <hr>
-                            <li><a href="/about">About</a></li>
+                            <li><a href="/about.html">About</a></li>
                             <hr>
-                            <li><a href="/products">Product</a></li>
+                            <li><a href="/products.html">Product</a></li>
                             <hr>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
                             <hr>
                         </ul>
                     </div>
@@ -55,14 +59,7 @@
         </div>
     </header>
 
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid
-        voluptate unde! Nesciunt perspiciatis quo similique quasi minima voluptatem, consectetur hic ducimus qui odit
-        consequatur, animi quaerat, fuga sed deleniti voluptatibus eos dicta. At, excepturi quidem! Fuga sit quaerat
-        culpa corrupti quis vitae illo exercitationem, recusandae nulla unde eius ratione, enim quidem animi est
-        temporibus aut dolorem repellat eligendi. Neque exercitationem consequatur harum non, ex at, accusantium error
-        sequi inventore animi repellat quo perspiciatis ab sint perferendis cumque, id adipisci ullam! Laudantium
-        voluptate expedita maxime dicta nulla asperiores commodi, facilis impedit. Eum temporibus voluptate commodi et
-        sequi. Provident, quod suscipit.</div>
+
 
 
     <footer>
@@ -70,31 +67,46 @@
             <div class="footer-bottom">
                 <div class="footer-left">
                     <div class="logo">
-                        <img src="/images/logo.png" alt="Etiket.pro ">
-                        <p>Düşüncələrinizi kağıza dönüştürürük</p>
+                        <div class="logo-img">
+                            <img src="/images/logo.png" alt="Etiket.pro ">
+                            <p>Düşüncələrinizi kağıza dönüştürürük</p>
+                        </div>
                     </div>
                     <div class="links">
-                        <h4>Linklər</h4>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about.html">About</a></li>
-                            <li><a href="/products.html">Products</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
-                        </ul>
+                        <h4 onclick="toggleList('linkList')">Linklər
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h4>
+                        <div id="linkList" class="dropdown-footer">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/products.html">Products</a></li>
+                                <li><a href="/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-right">
                     <div class="contact">
-                        <h4>Bizimlə Əlaqə</h4>
-                        <p>
-                            <i class="fa-solid fa-phone"></i>
-                            +994 50 212 13 99
-                        </p>
-                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:office@tuna.az">office@tuna.az</a></p>
+                        <h4 onclick="toggleList('contactList')">Bizimlə Əlaqə
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h4>
+                        <div id="contactList" class="dropdown-footer">
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                +994 50 212 13 99
+                            </p>
+                            <p><i class="fa-solid fa-envelope"></i><a href="mailto:office@tuna.az">office@tuna.az</a>
+                            </p>
+                        </div>
                     </div>
                     <div class="address">
-                        <h4>Ünvan</h4>
-                        <p><i class="fa-solid fa-location-dot"></i> Bakı şəh., Keşlə qəs., 1-ci Öünə küçəsi 19</p>
+                        <h4 onclick="toggleList('addresList')">Ünvan
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h4>
+                        <div id="addresList" class="dropdown-footer">
+                            <p><i class="fa-solid fa-location-dot"></i> Bakı şəh., Keşlə qəs., 1-ci Öünə küçəsi 19</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,10 +117,10 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script src="/scripts/sliders.js"></script>
     <script src="/scripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 </body>
-
 </html>

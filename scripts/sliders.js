@@ -1,4 +1,4 @@
-var swiper = new Swiper(".about-mySwiper", {
+const swiper = new Swiper(".about-mySwiper", {
     slidesPerView: 3,
     spaceBetween: 10,
     autoplay: {

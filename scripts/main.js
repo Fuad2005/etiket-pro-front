@@ -17,6 +17,18 @@ menu_close.addEventListener('click', function () {
 })
 
 
+//footer dropdown
+function toggleList(listId) {
+    var list = document.getElementById(listId);
+
+    if (!list.classList.contains("open")) {
+        list.classList.add("open");
+        list.style.maxHeight = list.scrollHeight + "px";
+    } else {
+        list.classList.remove("open");
+        list.style.maxHeight = "0";
+    }
+}
 
 
 

@@ -11,14 +11,14 @@
     h2 {
         color: #fff;
         font-family: montserrat;
-        font-size: 36px;
+        font-size: 26px;
         line-height: 48px;
         font-weight: 600;
         margin: auto;
     }
 }
 
-.about-etiket {
+#about-etiket {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -34,9 +34,8 @@
 
 
             h4 {
-                margin-top: 20px;
                 font-family: Montserrat;
-                font-size: 36px;
+                font-size: 26px;
                 line-height: 48px;
                 color: #00AFEF;
                 font-weight: 600;
@@ -46,8 +45,8 @@
             p {
                 font-family: poppins;
                 font-weight: 400;
-                font-size: 18px;
-                line-height: 24px;
+                font-size: 16px;
+                line-height: 20px;
                 color: #636363;
                 margin-right: 20px;
 
@@ -71,6 +70,7 @@
         .about-img-two {
             width: 100%;
             margin-bottom: 20px;
+            order: 2;
 
 
             img {
@@ -82,6 +82,7 @@
             width: 100%;
             display: flex;
             align-items: center;
+            order: 1;
 
             p {
                 font-family: poppins;
@@ -89,7 +90,7 @@
                 font-size: 16px;
                 line-height: 20px;
                 color: #636363;
-                margin-left: 20px;
+                margin-bottom: 10px;
 
             }
         }
@@ -104,7 +105,7 @@
 
     .about-title {
         width: 100%;
-        margin: 30px;
+        margin-block: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,6 +148,16 @@
     padding-bottom: 50px;
 }
 
+.swiper-pagination{
+    .swiper-pagination-bullet{
+        background-color: #ededed;
+        opacity: 1;
+        &.swiper-pagination-bullet-active{
+            background-color: #00AFEF;
+        }
+    }
+}
+
 
 
 @media(min-width:768px) {
@@ -161,7 +172,7 @@
         }
     }
 
-    .about-etiket {
+    #about-etiket {
         .container {
             row-gap: 20px;
 
@@ -175,31 +186,35 @@
 
             .about-img-two {
                 width: 48%;
+                order: 1;
             }
 
             .about-text {
                 width: 48%;
+                order: 2;
+                margin-left: 20px;
+            }
+        }
+    }
+    .about-slider {
+        margin-bottom: 50px;
+    
+        .about-title {
+    
+            h2 {
+                font-size: 36px;
+                line-height: 48px;
+            }
+    
+            span {
+                width: 320px;
+                border: 2px solid #FFF212;
             }
         }
     }
 }
 
-.about-slider {
-    margin-bottom: 50px;
 
-    .about-title {
-
-        h2 {
-            font-size: 36px;
-            line-height: 48px;
-        }
-
-        span {
-            width: 320px;
-            border: 2px solid #FFF212;
-        }
-    }
-}
 
 @media(min-width:992px) {
     .about-banner {
@@ -216,6 +231,7 @@
     .about-etiket {
         .container {
             row-gap: 50px;
+
             .about-etiket {
 
                 h4 {

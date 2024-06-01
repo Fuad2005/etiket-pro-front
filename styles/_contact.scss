@@ -10,7 +10,7 @@
     h2 {
         color: #fff;
         font-family: montserrat;
-        font-size: 36px;
+        font-size: 26px;
         line-height: 48px;
         font-weight: 600;
         margin: auto;
@@ -20,7 +20,6 @@
 .contact-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
@@ -31,8 +30,8 @@
         h1 {
             font-family: Montserrat;
             font-weight: 600;
-            font-size: 36px;
-            line-height: 48px;
+            font-size: 26px;
+            line-height: 36px;
             margin: 10px 0;
             color: #2f2f2f;
         }
@@ -136,7 +135,7 @@ button {
     background-color: #00AFEF;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     font-family: poppins;
     font-weight: 700;
     cursor: pointer;
@@ -164,10 +163,14 @@ button:hover {
     justify-content: space-between;
 
     p {
-        font-weight: poppins;
+        font-family: poppins;
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 10px;
+
+        a {
+            color: #2f2f2f;
+        }
 
         i {
             color: #FFF212;
@@ -182,28 +185,28 @@ button:hover {
             color: #EC268F;
             margin-bottom: 10px;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 15px;
             line-height: 30px;
             font-family: poppins;
         }
     }
 
     .address {
-        width: 50%;
+        width: 90%;
 
         h4 {
             color: #EC268F;
             margin-bottom: 10px;
             font-weight: 600;
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 14px;
+            line-height: 28px;
             font-family: poppins;
         }
     }
 
     .watsapp {
-        width: 100px;
-        height: 100px;
+        width: 65px;
+        height: 65px;
         background-color: #59BF29;
         display: flex;
         align-items: center;
@@ -215,7 +218,7 @@ button:hover {
         a {
             i {
                 color: #FFF;
-                font-size: 50px;
+                font-size: 40px;
             }
         }
     }
@@ -265,49 +268,37 @@ button:hover {
 
         }
 
-    }
-}
-
-
-    .contact-mobil {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        justify-content: space-between;
-    
-        p {
-            font-weight: poppins;
-            font-size: 18px;
-            line-height: 24px;
-            margin-bottom: 10px;
-    
-            i {
-                color: #FFF212;
-                margin-right: 10px;
-                margin-bottom: 10px;
-                font-size: 16px;
-            }
+        button {
+            background-color: #00AFEF;
+            font-size: 20px;
         }
-    
-    .address {
-        width: 50%;
 
-        h4 {
-            color: #EC268F;
-            margin-bottom: 10px;
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 36px;
-            font-family: poppins;
-        }
     }
-
     .contat-map {
+    
         iframe {
             height: 400px !important;
         }
     }
+
+    .contact-mobil {
+        flex-direction: row;
+
+        p {
+            font-size: 18px;
+            line-height: 24px;
+
+            i {
+
+                font-size: 18px;
+            }
+        }
+    }
+
 }
+
+
+
 
 
 
@@ -379,24 +370,5 @@ button:hover {
 
 
 
-    .contact-mobil {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
 
-        p {
-            font-weight: poppins;
-            font-size: 14px;
-            line-height: 18px;
-            margin-bottom: 10px;
-
-            i {
-                color: #FFF212;
-                margin-right: 10px;
-                margin-bottom: 10px;
-                font-size: 16px;
-            }
-        }
-
-    }
-    }
+}
