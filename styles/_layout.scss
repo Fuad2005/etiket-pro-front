@@ -15,6 +15,7 @@
 
 header {
     width: 100%;
+    z-index: 999;
 
     .wrapper {
         display: flex;
@@ -32,6 +33,14 @@ header {
 
         .navbar {
             display: none;
+
+            .menu {
+                li {
+                    a {
+                        font-family: poppins;
+                    }
+                }
+            }
         }
 
         nav {
@@ -40,7 +49,7 @@ header {
             justify-content: flex-end;
 
             #responsive-menu {
-
+                z-index: 999;
                 position: absolute;
                 top: -200%;
                 left: 0;
@@ -70,6 +79,7 @@ header {
                                 line-height: 27px;
                                 font-weight: 400;
                                 color: #353535;
+                                font-family: poppins;
                             }
                         }
 
@@ -134,7 +144,7 @@ header {
             width: 30%;
             margin-bottom: 10px;
 
-        
+
 
             img {
                 width: 100%;
@@ -154,6 +164,7 @@ header {
 
         .links {
             width: 25%;
+
             h4 {
                 font-family: poppins;
                 color: #EC268F;
@@ -175,7 +186,7 @@ header {
 
                         &:hover {
                             background-color: #FFF212;
-                            padding:0 5px;
+                            padding: 0 5px;
                             border-radius: 6px;
                             color: #b1b1b1;
                         }
@@ -239,9 +250,10 @@ header {
         }
     }
 }
-.dropdown-footer{
-    p{
-        a{
+
+.dropdown-footer {
+    p {
+        a {
             color: #414141;
             font-weight: poppins;
             font-size: 14px;
@@ -285,6 +297,7 @@ header {
                         position: relative;
 
                         a {
+                            font-family: poppins;
                             font-size: 18px;
                             line-height: 27px;
                             color: #353535;

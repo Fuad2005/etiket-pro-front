@@ -1,5 +1,5 @@
 @import 'layout';
-@import 'home';
+@import '_home';
 @import 'about';
 @import 'contact';
 @import 'products';
@@ -11,4 +11,7 @@
     text-decoration: none;
     list-style: none;
 
+}
+a{
+    outline: none   ;
 }

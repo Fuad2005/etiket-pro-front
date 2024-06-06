@@ -13,6 +13,7 @@
 
 header {
   width: 100%;
+  z-index: 999;
 }
 header .wrapper {
   display: flex;
@@ -29,12 +30,16 @@ header .wrapper .logo img {
 header .wrapper .navbar {
   display: none;
 }
+header .wrapper .navbar .menu li a {
+  font-family: poppins;
+}
 header .wrapper nav {
   width: 70%;
   display: flex;
   justify-content: flex-end;
 }
 header .wrapper nav #responsive-menu {
+  z-index: 999;
   position: absolute;
   top: -200%;
   left: 0;
@@ -60,6 +65,7 @@ header .wrapper nav #responsive-menu .open-menu ul li a {
   line-height: 27px;
   font-weight: 400;
   color: #353535;
+  font-family: poppins;
 }
 header .wrapper nav #responsive-menu .open-menu ul hr {
   margin-bottom: 20px;
@@ -212,6 +218,7 @@ header .wrapper nav #responsive-menu .open-menu #menu-close {
     position: relative;
   }
   header .wrapper .navbar ul li a {
+    font-family: poppins;
     font-size: 18px;
     line-height: 27px;
     color: #353535;
@@ -272,6 +279,555 @@ header .wrapper nav #responsive-menu .open-menu #menu-close {
   }
   .footer-bottom .footer-right .address h4 i {
     display: none;
+  }
+}
+#banner-slider {
+  height: 300px;
+}
+#banner-slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+#banner-slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#banner-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+#banner-slider .swiper-pagination {
+  margin-bottom: 50px;
+}
+#banner-slider p {
+  position: absolute;
+  width: 60%;
+  color: #fff;
+  font: 700 24px/30px Montserrat;
+}
+
+#home-drink {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#home-drink .drink-img {
+  width: 100%;
+  margin: auto;
+}
+#home-drink .drink-img img {
+  width: 100%;
+}
+#home-drink .drink-text {
+  width: 100%;
+}
+#home-drink .drink-text h2 {
+  text-align: center;
+  font: 400 24px/36px poppins;
+  color: #FFF212;
+  margin-bottom: 10px;
+}
+#home-drink .drink-text p {
+  text-align: center;
+  font: 400 14px/18px poppins;
+  color: #636363;
+}
+#home-drink .drink-text p span {
+  font-weight: 600;
+}
+
+#product-slider {
+  width: 90%;
+  margin: auto;
+}
+#product-slider .product-title {
+  width: 100%;
+  text-align: center;
+  padding-block: 20px;
+}
+#product-slider .product-title h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+  font: 500 20px/30px Montserrat;
+}
+#product-slider .product-title h2::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 90%;
+  background-color: #FFF212;
+}
+#product-slider .chosen-title {
+  width: 100%;
+  text-align: center;
+  padding-block: 20px;
+}
+#product-slider .chosen-title h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+  font: 500 20px/30px Montserrat;
+}
+#product-slider .chosen-title h2::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 90%;
+  background-color: #FFF212;
+}
+#product-slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#product-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+#chosen-slider {
+  width: 90%;
+  margin: auto;
+}
+#chosen-slider .chosen-title {
+  width: 100%;
+  text-align: center;
+  padding-block: 20px;
+}
+#chosen-slider .chosen-title h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+  font: 500 20px/30px Montserrat;
+}
+#chosen-slider .chosen-title h2::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 90%;
+  background-color: #FFF212;
+}
+#chosen-slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#chosen-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+#video-slider .video-text {
+  width: 90%;
+  margin: auto;
+  padding-block: 20px;
+  margin-top: 30px;
+}
+#video-slider .video-text h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+  font: 500 20px/30px Montserrat;
+}
+#video-slider .video-text h2::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 90%;
+  background-color: #FFF212;
+}
+#video-slider .swiper {
+  position: relative;
+  height: 350px;
+}
+#video-slider .swiper .swiper-wrapper .swiper-slide {
+  padding: 0 10px;
+}
+#video-slider .swiper .swiper-wrapper .swiper-slide .video-container {
+  position: relative;
+}
+#video-slider .swiper .swiper-wrapper .swiper-slide .video-container video {
+  filter: brightness(80%);
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
+#video-slider .swiper .swiper-wrapper .swiper-slide .video-container .play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#video-slider .swiper .swiper-wrapper .swiper-slide .video-container .play-pause-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: #fff;
+}
+#video-slider .swiper .swiper-wrapper .swiper-slide .video-container .play-pause-btn .fa-pause {
+  display: none;
+}
+#video-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#partners {
+  padding-block: 40px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#partners .heading {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+  text-align: center;
+  font: 500 20px/30px Montserrat;
+}
+#partners .heading::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 90%;
+  background-color: #FFF212;
+}
+#partners .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: center;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+#partners .swiper .swiper-slide img:hover {
+  filter: grayscale(0);
+}
+
+#count-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#count-section .background-image {
+  background-image: url("/images/1.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+#count-section .content {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#count-section .content h2 {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  font-family: Montserrat;
+  font-weight: 400;
+  width: 90%;
+}
+#count-section .content .statistika {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+#count-section .content .statistika .stat-item {
+  text-align: center;
+}
+#count-section .content .statistika .stat-item .count {
+  font-size: 32px;
+  font-weight: bold;
+  color: #E91E63;
+  font-family: "poppins";
+}
+#count-section .content .statistika .stat-item p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-family: poppins;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (min-width: 578px) {
+  #count-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  #count-section .background-image {
+    background-image: url("/images/1.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  #count-section .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #count-section .content h2 {
+    text-align: start;
+    line-height: 22px;
+    font-family: Montserrat;
+    font-weight: 400;
+    width: 40%;
+  }
+  #count-section .content .statistika {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #count-section .content .statistika .stat-item {
+    text-align: center;
+  }
+  #count-section .content .statistika .stat-item .count {
+    font-size: 32px;
+    font-weight: bold;
+    color: #E91E63;
+  }
+  #count-section .content .statistika .stat-item p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #banner-slider {
+    height: 450px;
+  }
+  #banner-slider p {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  #home-drink {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  #home-drink .drink-img {
+    width: 45%;
+  }
+  #home-drink .drink-img img {
+    width: 100%;
+  }
+  #home-drink .drink-text {
+    width: 55%;
+    padding: 0 10px;
+  }
+  #chosen-slider .chosen-title h2 {
+    font: 500 24px/38px Montserrat;
+  }
+  #product-slider .product-title h2 {
+    font: 500 24px/38px Montserrat;
+  }
+  #count-section .background-image {
+    height: 360px;
+  }
+  #count-section .content {
+    padding: 60px 20px;
+  }
+  #count-section .content h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  #count-section .content .statistika {
+    gap: 20px;
+  }
+  #count-section .content .statistika .stat-item .count {
+    font-size: 60px;
+  }
+  #count-section .content .statistika .stat-item p {
+    font-size: 18px;
+  }
+  #partners .heading {
+    font: 500 24px/38px Montserrat;
+  }
+  #video-slider .video-text h2 {
+    font: 500 24px/38px Montserrat;
+  }
+  #partners .heading {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #banner-slider {
+    height: 600px;
+  }
+  #banner-slider p {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  #home-drink {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  #home-drink .drink-img {
+    width: 40%;
+  }
+  #home-drink .drink-img img {
+    width: 100%;
+  }
+  #home-drink .drink-text h2 {
+    text-align: start;
+    font: 400 24px/36px poppins;
+    color: #FFF212;
+    margin-bottom: 10px;
+  }
+  #home-drink .drink-text p {
+    text-align: start;
+    font: 400 16px/20px poppins;
+    color: #636363;
+  }
+  #chosen-slider .chosen-title {
+    margin-bottom: 20px;
+  }
+  #chosen-slider .chosen-title h2 {
+    font: 500 36px/48px Montserrat;
+  }
+  #partners .heading {
+    font: 500 36px/48px Montserrat;
+  }
+  #product-slider .product-title h2 {
+    font: 500 36px/48px Montserrat;
+  }
+  #video-slider .video-text h2 {
+    font: 500 36px/48px Montserrat;
+  }
+  #count-section .background-image {
+    height: 400px;
+  }
+  #count-section .content {
+    padding: 80px 20px;
+  }
+  #count-section .content h2 {
+    font-size: 48px;
+    line-height: 58px;
+    width: 50%;
+  }
+  #count-section .content .statistika {
+    gap: 60px;
+  }
+  #count-section .content .statistika .stat-item .count {
+    font-size: 80px;
+  }
+  #count-section .content .statistika .stat-item p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner-slider {
+    height: 600px;
+  }
+  #banner-slider p {
+    font-size: 64px;
+    line-height: 78px;
+  }
+  #home-drink .drink-text h2 {
+    text-align: start;
+    font: 400 48px/72px poppins;
+  }
+  #home-drink .drink-text p {
+    text-align: start;
+    font: 400 20px/30px poppins;
+  }
+  #home-drink .drink-text p span {
+    font-weight: 600;
+  }
+  #partners .heading {
+    font: 500 48px/58px Montserrat;
+  }
+  #chosen-slider .chosen-title h2 {
+    font: 500 48px/58px Montserrat;
+  }
+  #product-slider .product-title h2 {
+    font: 500 48px/58px Montserrat;
   }
 }
 .about-banner {
@@ -355,17 +911,17 @@ header .wrapper nav #responsive-menu .open-menu #menu-close {
   margin-bottom: 10px;
 }
 
-.about-slider {
+#about-slider {
   margin-bottom: 50px;
 }
-.about-slider .about-title {
+#about-slider .about-title {
   width: 100%;
   margin-block: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-slider .about-title h2 {
+#about-slider .about-title h2 {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 24px;
@@ -373,17 +929,15 @@ header .wrapper nav #responsive-menu .open-menu #menu-close {
   color: #4B4B4B;
   margin-bottom: 2px;
 }
-.about-slider .about-title span {
+#about-slider .about-title span {
   width: 260px;
   border: 2px solid #FFF212;
 }
-
-.swiper {
+#about-slider .swiper {
   width: 100%;
   height: 300px;
 }
-
-.swiper-slide {
+#about-slider .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -391,8 +945,7 @@ header .wrapper nav #responsive-menu .open-menu #menu-close {
   justify-content: center;
   align-items: center;
 }
-
-.swiper-slide img {
+#about-slider .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -446,6 +999,9 @@ header .wrapper nav #responsive-menu .open-menu #menu-close {
   .about-slider .about-title span {
     width: 320px;
     border: 2px solid #FFF212;
+  }
+  .swiper {
+    height: 400px;
   }
 }
 @media (min-width: 992px) {
@@ -799,4 +1355,8 @@ button:hover {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+a {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
