@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(counter);
     });
 });
-
+ 
 
 
 
