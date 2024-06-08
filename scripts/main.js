@@ -35,21 +35,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.count');
     const speed = 200; // Daha aşağı rəqəm daha yavaş countır
 
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-count');
-            const count = +counter.innerText;
-            const increment = target / speed;
+    const updateCount = (counter) => {
+        const target = +counter.getAttribute('data-count');
+        const count = +counter.innerText;
+        const increment = target / speed;
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 10);
-            } else {
-                counter.innerText = target;
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(() => updateCount(counter), 10);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    const handleIntersect = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                updateCount(counter);
+                observer.unobserve(counter); // Stop observing once the counter has started
             }
-        };
+        });
+    };
 
-        updateCount();
+    const observer = new IntersectionObserver(handleIntersect, {
+        threshold: 0.5 // Adjust this value based on when you want to start the count (0.5 means halfway into the view)
+    });
+
+    counters.forEach(counter => {
+        observer.observe(counter);
     });
 });
 
