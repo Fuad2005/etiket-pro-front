@@ -116,6 +116,36 @@ const swiperLogo = new Swiper(".logo-mySwiper", {
   }
 });
 
+const swiperDeteil = new Swiper(".deteil-mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is <= 548px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is > 548px and <= 992px
+    549: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is > 992px
+    993: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+});
+
 // home banner
 const swiperBanner = new Swiper(".bannerMySwiper", {
   autoplay: {
@@ -126,6 +156,8 @@ const swiperBanner = new Swiper(".bannerMySwiper", {
     clickable: true,
   },
 });
+
+
 
 
 // const swiperVideo = new Swiper(".video-mySwiper", {
